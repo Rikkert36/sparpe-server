@@ -16,7 +16,7 @@
     "clean": "rimraf \"dist/\" \"tsconfig.tsbuildinfo\"",
     "test": "jest",
     "test-cov": "jest --coverage=true --coverageProvider=v8 --runInBand",
-    "gen-client": "nswag openapi2tsclient /input:src/public/swagger.json /output:../sparpe client/src/clients/server.generated.ts",
+    "gen-client": "nswag openapi2tsclient /input:src/public/swagger.json /output:../sparpe-client/src/clients/server.generated.ts",
     "build-client": "cd ../client && npm install && npm run copy-to-server",
     "build-server": "tsc"
   },
