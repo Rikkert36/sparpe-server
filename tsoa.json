@@ -1,0 +1,21 @@
+{
+    "entryFile": "./src/index.ts",
+    "noImplicitAdditionalProperties": "silently-remove-extras",
+    "controllerPathGlobs": ["src/**/*Controller.ts"],
+    "spec": {
+      "outputDirectory": "./src/public",
+      "specVersion": 3,
+      "host": "localhost:5000",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "basePath": "/api"
+    },
+    "routes": {
+      "routesDir": "./src",
+      "basePath": "/api",
+      "middleware": "express"
+    }
+  }
+  
